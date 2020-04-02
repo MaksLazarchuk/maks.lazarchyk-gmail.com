@@ -49,3 +49,72 @@ body{
     text-align: center;
     font-family: 'Open Sans Bold';
 }
+.zip-code{
+    position: absolute;
+    height: 335px;
+    width: 334px;
+    margin-top: -221px;
+    margin-left: 469px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px #b4adad;;
+}
+.input-border{
+    font-family: 'Open Sans Regular';
+    color: #b4adad;
+    display: block;
+    width: 265px;
+    height: 33px;
+    border-radius: 2px;
+    box-shadow: 0px -0.5px 1px 0px #e5e5e5;;
+    border: 1px solid #e5e5e5;
+    margin-left: 33px;
+    margin-top: 30px;
+    font-size: 15.35px;
+}
+input::placeholder {
+    color: #b4adad;
+    padding-left: 16px;
+}
+.photo-zip-code{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 23px;
+    height: 87px;
+    margin-bottom: 20px;
+}
+.photo-zip-code img{
+    overflow: unset;
+    overflow: hidden;
+}
+.lorem-ipsum-zip{
+    width: 250px;
+    margin-top: 27px;
+    margin-left: 28px;
+    text-align: center;
+}
+.lorem-ipsum-zip a{
+    font-family: 'Open Sans Regular';
+    text-decoration: none;
+    color: #938e8e;
+    position: relative;
+    font-size: 15.35px;
+    width: 200px;
+    line-height: 19px;
+}
+.more-button{
+    font-size: 25.65px;
+    font-family: 'Open Sans SemiBold';
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 1px;
+    color: #ffffff;
+    background-color: #227dd3;
+    width: 192px;
+    height: 45px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 23px;
+    margin-left: 66px;
+}
