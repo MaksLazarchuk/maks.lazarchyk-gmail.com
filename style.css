@@ -50,11 +50,16 @@ body{
     font-family: 'Open Sans Bold';
 }
 .zip-code{
+    text-align: center;
     position: absolute;
     height: 335px;
     width: 334px;
-    margin-top: -221px;
-    margin-left: 469px;
+    top: -222px;
+    left: -5px;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1px;
     background-color: white;
     border-radius: 2px;
     box-shadow: 0px 1px 3px 0px #b4adad;;
@@ -70,11 +75,11 @@ body{
     border: 1px solid #e5e5e5;
     margin-left: 33px;
     margin-top: 30px;
+    padding-left: 16px;
     font-size: 15.35px;
 }
 input::placeholder {
     color: #b4adad;
-    padding-left: 16px;
 }
 .photo-zip-code{
     display: flex;
@@ -88,13 +93,13 @@ input::placeholder {
     overflow: unset;
     overflow: hidden;
 }
-.lorem-ipsum-zip{
+.text-zip-code{
     width: 250px;
     margin-top: 27px;
-    margin-left: 28px;
+    margin: 27px auto 0;
     text-align: center;
 }
-.lorem-ipsum-zip a{
+.text-zip-code span{
     font-family: 'Open Sans Regular';
     text-decoration: none;
     color: #938e8e;
@@ -107,14 +112,10 @@ input::placeholder {
     font-size: 25.65px;
     font-family: 'Open Sans SemiBold';
     display: inline-block;
-    text-decoration: none;
-    border-radius: 1px;
     color: #ffffff;
     background-color: #227dd3;
     width: 192px;
     height: 45px;
-    line-height: 41px;
-    text-align: center;
-    margin-top: 23px;
-    margin-left: 66px;
+    margin-top: 21px;
+    border: none;
 }
