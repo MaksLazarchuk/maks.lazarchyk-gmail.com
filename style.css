@@ -123,54 +123,37 @@ input::placeholder {
 }
 .bloc1{
     background-color: #ffffff;
-    height: 397px;
-    width: 100%;
-    object-fit: cover;
+    padding-top: 170px;
 }
-.bloc1-picture{
-    position: relative;
+.bloc1-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
 }
-.documents-img{
-    margin-top: 170px;
-    margin-left: 198px;
+.bloc1-group{
+    display: flex;
+    flex-basis: 415px;
 }
-.camera-img{
-    margin-left: 368px;
+.bloc1-group img{
+    margin-right: 30px;
 }
-.bloc1-text-documents{
-    width: 280px;
-    margin-top: -117px;
-    margin-left: 322px;
-}
-.bloc1-text-camera{
-    width: 280px;
-    margin-top: -104px;
-    margin-left: 790px;
-}
-.title-documents{
-    width: 280px;
-    margin-bottom: 14px;
-    margin-left: 3px;
-}
-.title-camera{
-    width: 280px;
-    margin-bottom: 14px;
-}
-.content-documents{
-    line-height: 22px;
-}
-.content-camera{
-    line-height: 20px;
-}
-.title{
+.bloc1-content .title{
     font-size: 27.35px;
     font-family: 'Open Sans SemiBold';
     text-decoration: none;
     color: #000000;
+    margin-bottom: 10px;
+    margin-top: 9px;
 }
-.content{
+.bloc1-content .content{
     font-size: 14px;
     font-family: 'Open Sans Regular';
     text-decoration: none;
     color: #666666;
+    line-height: 22px;
+}
+.bloc1-content .bloc1-text{
+    padding-right: 8px;
 }
