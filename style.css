@@ -49,16 +49,17 @@ body{
     text-align: center;
     font-family: 'Open Sans Bold';
 }
-.zip-code{
-    text-align: center;
-    position: absolute;
-    height: 335px;
-    width: 334px;
-    top: -222px;
-    left: -5px;
-    right: 0;
-    margin: 0 auto;
+.zip-code-container {
     position: relative;
+}
+.zip-code{
+    position: absolute;
+    top: -222px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 334px;
+    margin: 0 auto;
     padding-top: 1px;
     background-color: white;
     border-radius: 2px;
@@ -117,62 +118,42 @@ input::placeholder {
     width: 192px;
     height: 45px;
     margin-top: 21px;
+    margin-bottom: 28px;
     border: none;
 }
 .bloc1{
     background-color: #ffffff;
-    height: 397px;
-    width: 100%;
-    object-fit: cover;
+    padding-top: 170px;
+    padding-bottom: 101px;
 }
-.bloc1-picture{
-    position: relative;
+.bloc1-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
 }
-.documents-img{
-    margin-top: 170px;
-    margin-left: 198px;
+.bloc1-group{
+    display: flex;
+    flex-basis: 415px;
 }
-.camera-img{
-    margin-left: 368px;
+.bloc1-group img{
+    margin-right: 30px;
 }
-.bloc1-text-documents{
-    width: 280px;
-    margin-top: -117px;
-    margin-left: 322px;
-}
-.bloc1-text-camera{
-    width: 280px;
-    margin-top: -110px;
-    margin-left: 790px;
-}
-.title-documents{
-    width: 280px;
-    margin-bottom: 14px;
-    margin-left: 3px;
-}
-.title-camera{
-    width: 280px;
-    margin-bottom: 14px;
-}
-.content-documents{
-    line-height: 22px;
-    height: 70px;
-}
-.content-camera{
-    line-height: 20px;
-    height: 70px;
-}
-.title{
+.bloc1-content .title{
     font-size: 27.35px;
     font-family: 'Open Sans SemiBold';
     text-decoration: none;
     color: #000000;
+    margin-bottom: 10px;
+    margin-top: 9px;
 }
-.content{
+.bloc1-content .content{
     font-size: 14px;
     font-family: 'Open Sans Regular';
     text-decoration: none;
     color: #666666;
+    line-height: 23px;
 }
 #bloc2 .bloc2-background{
     position: absolute; 
@@ -254,4 +235,8 @@ input::placeholder {
     height: 56px;
     margin-left: 573px;
     margin-top: -16px;
+    line-height: 22px;
+}
+.bloc1-content .bloc1-text{
+    padding-right: 8px;
 }
