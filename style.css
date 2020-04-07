@@ -2,9 +2,6 @@ html,body{
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #464545;
-}
 .container{
     width: 1280px;
     margin: 0 auto;
@@ -159,42 +156,61 @@ input::placeholder {
     position: absolute; 
     object-fit: cover;
 }
-.top-bloc2 img{
+.top-bloc2{
+    padding-top: 591px;
     position: relative;
-    margin-top: 87px;
-    margin-left: 204px;
+    width: 658px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom-bloc2{
+    position: relative;
+    margin-top: 338px;
+    width: 859px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-bloc2 img{
+    position: absolute;
+    margin-top: -504px;
+    margin-left: -106px;
 }
 .bottom-bloc2 img{
-    position: relative;
-    margin-top: 350px;
+    position: absolute;
+    margin-left: -210px;
+    margin-top: 7px;
 }
 .text-bloc2-top{
     position: relative;
-    width: 655px;
+    width: 658px;
     height: 290px;
     margin-top: -314px;
-    margin-left: 308px;
     line-height: 23px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .text-bloc2-bottom{
     position: relative;
     width: 500px;
-    height: 270px;
-    margin-left: 569px;
-    margin-top: -444px;
+    height: 340px;
+    margin-top: 4px;
+    margin-left: auto;
     line-height: 23px;
 }
 .bloc2-top-title{
-    margin-bottom: 32px;
+    margin-bottom: 44px;
     margin-left: 146px;
 }
-.bloc2-top-title a{
+.bloc2-bottom-title{
+    margin-top: -17px;
+}
+.bloc2-top-title h2{
     font-size: 39.35px;
     font-family: 'Open Sans SemiBold';
     text-decoration: none;
     color: #ffffff;
 }
-.bloc2-bottom-title a{
+.bloc2-bottom-title h2{
     font-size: 39.35px;
     font-family: 'Open Sans SemiBold';
     text-decoration: none;
@@ -214,7 +230,7 @@ input::placeholder {
     color: #ffffff;
 }
 .bloc2-bottom-content{
-    margin-top: 23px;
+    margin-top: 30px;
 }
 .top-content-1{
     padding-bottom: 47px;
@@ -233,8 +249,8 @@ input::placeholder {
     color: #ffffff;
     width: 202px;
     height: 56px;
-    margin-left: 573px;
-    margin-top: -16px;
+    margin-left: 3px;
+    margin-top: 42px;
     line-height: 22px;
 }
 .bloc1-content .bloc1-text{
