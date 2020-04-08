@@ -121,6 +121,9 @@ input::placeholder {
     margin-bottom: 28px;
     border: none;
 }
+.more-button:active{
+    opacity: 0.6;
+} 
 .bloc1{
     background-color: #ffffff;
     padding-top: 170px;
@@ -156,4 +159,68 @@ input::placeholder {
 }
 .bloc1-content .bloc1-text{
     padding-right: 8px;
+}
+.bloc3 img{
+    position: absolute; 
+    object-fit: cover;
+}
+.bloc3 .fond{
+    position: relative;
+    width: 430px;
+	height: 430px;
+	background: #fdfdfd;
+    border-radius: 215px;
+    top: 161px;
+    left: 425px;
+}
+.bloc3-content{
+    top: 111px;
+    margin-left: 47px;
+    position: relative;
+}
+.bloc3 .input-border{
+    font-family: 'Open Sans Regular';
+    color: #a5a7ae;
+    display: block;
+    width: 260px;
+    height: 29px;
+    border-radius: 1px;
+    border: 1px solid #d8d8d8;
+    margin-left: 33px;
+    margin-top: 30px;
+    padding-left: 16px;
+    font-size: 14px;
+    margin-bottom: -16px;
+}
+.bloc3-content .input-border:nth-child(3){
+    height: 78px;
+}
+.bloc3-content textarea {
+    resize: none;
+}
+.bloc3-content textarea::placeholder {
+    color: #b4adad;
+}
+.button-bloc3{
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 47px;
+}
+.button-bloc3:active{
+    opacity: 0.6;
+} 
+.main-bottom{
+    position: absolute;
+    height: 47px;
+    margin-top: 206px;
+    background-color: #43a06d;
+}
+.main-bottom a{
+    position: absolute;
+    font-family: 'Open Sans Regular';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 465px;
+    margin-top: 17px;
 }
