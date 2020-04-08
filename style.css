@@ -2,9 +2,6 @@ html,body{
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #464545;
-}
 .container{
     width: 1280px;
     margin: 0 auto;
@@ -124,6 +121,7 @@ input::placeholder {
 .bloc1{
     background-color: #ffffff;
     padding-top: 170px;
+    padding-bottom: 101px;
 }
 .bloc1-content{
     margin-left: auto;
@@ -152,6 +150,106 @@ input::placeholder {
     font-family: 'Open Sans Regular';
     text-decoration: none;
     color: #666666;
+    line-height: 23px;
+}
+#bloc2 .bloc2-background{
+    position: absolute; 
+    object-fit: cover;
+}
+.top-bloc2{
+    padding-top: 277px;
+    position: relative;
+    width: 658px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom-bloc2{
+    position: relative;
+    margin-top: 338px;
+    width: 859px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-bloc2 img{
+    position: absolute;
+    top: 87px;
+    left: -106px;
+}
+.bottom-bloc2 img{
+    position: absolute;
+    margin-left: -210px;
+    margin-top: 7px;
+}
+.text-bloc2-top{
+    position: relative;
+    width: 658px;
+    height: 290px;
+    line-height: 23px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-bloc2-bottom{
+    position: relative;
+    width: 500px;
+    height: 340px;
+    margin-top: 4px;
+    margin-left: auto;
+    line-height: 23px;
+}
+.bloc2-top-title{
+    margin-bottom: 44px;
+    margin-left: 146px;
+}
+.bloc2-bottom-title{
+    margin-top: -17px;
+}
+.bloc2-top-title h2{
+    font-size: 39.35px;
+    font-family: 'Open Sans SemiBold';
+    text-decoration: none;
+    color: #ffffff;
+}
+.bloc2-bottom-title h2{
+    font-size: 39.35px;
+    font-family: 'Open Sans SemiBold';
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: -8px;
+}
+.bloc2-top-content a{
+    font-size: 14px;
+    font-family: 'Open Sans Regular';
+    text-decoration: none;
+    color: #ffffff;
+}
+.bloc2-bottom-content a{
+    font-size: 14px;
+    font-family: 'Open Sans Regular';
+    text-decoration: none;
+    color: #ffffff;
+}
+.bloc2-bottom-content{
+    margin-top: 30px;
+}
+.top-content-1{
+    padding-bottom: 47px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.download{
+    background-color: transparent;
+    position: relative;
+    font-size: 27.35px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #ffffff;
+    font-family: 'Open Sans SemiBold';
+    display: inline-block;
+    color: #ffffff;
+    width: 202px;
+    height: 56px;
+    margin-left: 3px;
+    margin-top: 42px;
     line-height: 22px;
 }
 .bloc1-content .bloc1-text{
