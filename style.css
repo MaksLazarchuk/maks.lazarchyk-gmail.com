@@ -318,7 +318,6 @@ input::placeholder {
   opacity: 0.6;
 }
 .main-bottom {
-  position: absolute;
   height: 47px;
   background-color: #43a06d;
 }
