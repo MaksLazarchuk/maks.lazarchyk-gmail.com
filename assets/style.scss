@@ -1,3 +1,4 @@
+@import "./media-queries";
 html,
 body {
   margin: 0;
@@ -6,6 +7,9 @@ body {
 .container {
   width: 1280px;
   margin: 0 auto;
+  @include respond-below(lg){
+    width: 100%;
+  }
 }
 #main-header {
   .container {
@@ -163,9 +167,28 @@ input::placeholder {
   }
 }
 #bloc2{
+  .container{
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-1{
+    position: absolute;
+    width: 100%;
+    height: 874px;
+    background-color: #5fc18b;
+  }
+  .bg-2{
+    position: absolute;
+    width: 100%;
+    top: 874px;
+    height: 677px;
+    background-color: #44a36f;
+  }
   .bloc2-background {
     position: absolute;
     object-fit: cover;
+    width: 100%;
+    top: 544px;
   }
   .top-bloc2 {
     padding-top: 277px;
@@ -181,11 +204,11 @@ input::placeholder {
   }
   .bottom-bloc2 {
     position: relative;
-    margin-top: 338px;
+    margin-top: 360px;
     width: 859px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 124px;
+    padding-bottom: 102px;
     img {
       position: absolute;
       margin-left: -210px;
@@ -261,7 +284,7 @@ input::placeholder {
     width: 202px;
     height: 56px;
     margin-left: 3px;
-    margin-top: 42px;
+    margin-top: 47px;
     line-height: 22px;
   }
 } 

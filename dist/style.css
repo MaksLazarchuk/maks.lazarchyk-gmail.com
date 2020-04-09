@@ -6,6 +6,9 @@ body {
 .container {
   width: 1280px;
   margin: 0 auto; }
+  @media (max-width: 1365px) {
+    .container {
+      width: 100%; } }
 
 #main-header .container {
   height: 800px;
@@ -147,9 +150,28 @@ input::placeholder {
   .bloc1-content .bloc1-text {
     padding-right: 8px; }
 
+#bloc2 .container {
+  position: relative;
+  overflow: hidden; }
+
+#bloc2 .bg-1 {
+  position: absolute;
+  width: 100%;
+  height: 874px;
+  background-color: #5fc18b; }
+
+#bloc2 .bg-2 {
+  position: absolute;
+  width: 100%;
+  top: 874px;
+  height: 677px;
+  background-color: #44a36f; }
+
 #bloc2 .bloc2-background {
   position: absolute;
-  object-fit: cover; }
+  object-fit: cover;
+  width: 100%;
+  top: 544px; }
 
 #bloc2 .top-bloc2 {
   padding-top: 277px;
@@ -164,11 +186,11 @@ input::placeholder {
 
 #bloc2 .bottom-bloc2 {
   position: relative;
-  margin-top: 338px;
+  margin-top: 360px;
   width: 859px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 124px; }
+  padding-bottom: 102px; }
   #bloc2 .bottom-bloc2 img {
     position: absolute;
     margin-left: -210px;
@@ -240,7 +262,7 @@ input::placeholder {
   width: 202px;
   height: 56px;
   margin-left: 3px;
-  margin-top: 42px;
+  margin-top: 47px;
   line-height: 22px; }
 
 .bloc3 .container {
