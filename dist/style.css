@@ -8,7 +8,8 @@ body {
   margin: 0 auto; }
   @media (max-width: 1365px) {
     .container {
-      width: 100%; } }
+      width: 100%;
+      max-width: 1280px; } }
 
 #main-header .container {
   height: 800px;
@@ -206,8 +207,8 @@ input::placeholder {
 #bloc2 .bloc2-background {
   position: absolute;
   object-fit: cover;
-  width: 100%;
-  top: 544px; }
+  bottom: 0;
+  top: 546px; }
   @media (max-width: 767px) {
     #bloc2 .bloc2-background {
       display: none; } }

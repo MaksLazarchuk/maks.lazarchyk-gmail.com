@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   @include respond-below(lg) {
     width: 100%;
+    max-width: 1280px;
   }
 }
 #main-header {
@@ -223,8 +224,8 @@ input::placeholder {
   .bloc2-background {
     position: absolute;
     object-fit: cover;
-    width: 100%;
-    top: 544px;
+    bottom: 0;
+    top: 546px;
     @include respond-below(sm) {
       display: none;
     }
