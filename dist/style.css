@@ -15,7 +15,8 @@ body {
   height: 800px;
   box-sizing: border-box;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 #main-header img {
   position: absolute;
@@ -23,7 +24,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  will-change: transform; }
 
 #main-header .logo {
   margin-top: 68px;
