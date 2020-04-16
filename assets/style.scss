@@ -7,8 +7,9 @@ body {
 .container {
   width: 1280px;
   margin: 0 auto;
-  @include respond-below(lg){
+  @include respond-below(lg) {
     width: 100%;
+    max-width: 1280px;
   }
 }
 #main-header {
@@ -33,6 +34,10 @@ body {
     position: relative;
     height: 273px;
     width: 273px;
+    @include respond-below(sm) {
+      height: 136px;
+      width: 136px;
+    }
   }
   .text a {
     position: relative;
@@ -41,6 +46,10 @@ body {
     font-size: 49.35px;
     text-decoration: none;
     color: #ffffff;
+    @include respond-below(sm) {
+      font-size: 34.35px;
+      width: 474px;
+    }
   }
   .text-top {
     margin-top: 69px;
@@ -68,6 +77,10 @@ body {
   background-color: white;
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px #b4adad;
+  @include respond-below(xs) {
+    width: 100%;
+    box-shadow: none;
+  }
   .input-border {
     font-family: "Open Sans Regular";
     color: #b4adad;
@@ -81,6 +94,11 @@ body {
     margin-top: 30px;
     padding-left: 16px;
     font-size: 15.35px;
+    @include respond-below(xs) {
+      margin-bottom: 23px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 input::placeholder {
@@ -93,6 +111,10 @@ input::placeholder {
   margin-top: 23px;
   height: 87px;
   margin-bottom: 20px;
+  @include respond-below(xs) {
+    width: 334px;
+    margin: 0 auto;
+  }
   img {
     overflow: hidden;
   }
@@ -137,12 +159,20 @@ input::placeholder {
     width: 880px;
     display: flex;
     justify-content: space-between;
+    @include respond-below(md) {
+      flex-direction: column;
+      width: 400px;
+    }
   }
   &-group {
     display: flex;
     flex-basis: 415px;
+    @include respond-below(md) {
+      flex-basis: 200px;
+    }
     img {
       margin-right: 30px;
+      height: 100%;
     }
   }
   &-content {
@@ -166,29 +196,39 @@ input::placeholder {
     }
   }
 }
-#bloc2{
-  .container{
+#bloc2 {
+  .container {
     position: relative;
     overflow: hidden;
   }
-  .bg-1{
+  .bg-1 {
     position: absolute;
     width: 100%;
     height: 874px;
     background-color: #5fc18b;
+    @include respond-below(sm) {
+      background-color: #44a36f;
+      height: 100%;
+    }
   }
-  .bg-2{
+  .bg-2 {
     position: absolute;
     width: 100%;
     top: 874px;
     height: 677px;
     background-color: #44a36f;
+    @include respond-below(sm) {
+      display: none;
+    }
   }
   .bloc2-background {
     position: absolute;
     object-fit: cover;
-    width: 100%;
-    top: 544px;
+    bottom: 0;
+    top: 546px;
+    @include respond-below(sm) {
+      display: none;
+    }
   }
   .top-bloc2 {
     padding-top: 277px;
@@ -196,10 +236,17 @@ input::placeholder {
     width: 658px;
     margin-left: auto;
     margin-right: auto;
+    @include respond-below(sm) {
+      width: 100%;
+      padding-top: 170px;
+    }
     img {
       position: absolute;
       top: 87px;
       left: -106px;
+      @include respond-below(sm) {
+        display: none;
+      }
     }
   }
   .bottom-bloc2 {
@@ -209,19 +256,28 @@ input::placeholder {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 102px;
+    @include respond-below(sm) {
+      width: 100%;
+      margin-top: 140px;
+    }
     img {
       position: absolute;
       margin-left: -210px;
       margin-top: 7px;
+      @include respond-below(sm) {
+        display: none;
+      }
     }
   }
   .text-bloc2-top {
     position: relative;
     width: 658px;
-    height: 290px;
     line-height: 23px;
     margin-left: auto;
     margin-right: auto;
+    @include respond-below(sm) {
+      width: 480px;
+    }
   }
   .text-bloc2-bottom {
     position: relative;
@@ -230,10 +286,22 @@ input::placeholder {
     margin-top: 4px;
     margin-left: auto;
     line-height: 23px;
+    @include respond-below(md) {
+      margin-left: 340px;
+      width: 390px;
+    }
+    @include respond-below(sm) {
+      margin-right: auto;
+      margin-left: auto;
+      width: 480px;
+    }
   }
   .bloc2-top-title {
     margin-bottom: 44px;
     margin-left: 146px;
+    @include respond-below(sm) {
+      margin-left: 90px;
+    }
     h2 {
       font-size: 39.35px;
       font-family: "Open Sans SemiBold";
@@ -243,6 +311,9 @@ input::placeholder {
   }
   .bloc2-bottom-title {
     margin-top: -17px;
+    @include respond-below(sm) {
+      margin-left: 90px;
+    }
     h2 {
       font-size: 39.35px;
       font-family: "Open Sans SemiBold";
@@ -286,9 +357,12 @@ input::placeholder {
     margin-left: 3px;
     margin-top: 47px;
     line-height: 22px;
+    @include respond-below(sm) {
+      margin-left: 120px;
+    }
   }
-} 
-.bloc3{
+}
+.bloc3 {
   .container {
     padding-top: 161px;
     position: relative;
@@ -309,11 +383,21 @@ input::placeholder {
     background: #fdfdfd;
     border-radius: 215px;
     margin: 0 auto;
+    @include respond-below(xs) {
+      width: 400px;
+      height: 350px;
+      background: #fdfdfda6;
+      border-radius: 10px;
+    }
   }
   &-content {
     padding-top: 80px;
     margin-left: 47px;
     position: relative;
+    @include respond-below(xs) {
+      padding-top: 55px;
+      margin-left: 28px;
+    }
   }
   .input-border {
     font-family: "Open Sans Regular";
@@ -342,8 +426,13 @@ input::placeholder {
   }
   .button-bloc3 {
     position: absolute;
+    height: 71px;
+    width: 70px;
     margin-left: 140px;
-    margin-top: 47px;
+    margin-top: 45px;
+    @include respond-below(xs) {
+      margin-top: 25px;
+    }
     &:active {
       opacity: 0.6;
     }
@@ -358,7 +447,8 @@ input::placeholder {
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
-    margin-left: 465px;
+    text-align: center;
     margin-top: 17px;
+    width: 100%;
   }
 }
