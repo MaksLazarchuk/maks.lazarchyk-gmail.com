@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function () {
   return gulp.src('./assets/**/*.scss')
@@ -10,3 +11,9 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   return gulp.watch('./assets/**/*.scss', gulp.series('sass'));
 });
+
+gulp.task('default',() => 
+  gulp.src('media/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('dist/images'))
+);
