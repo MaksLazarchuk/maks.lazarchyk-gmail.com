@@ -346,7 +346,7 @@ input::placeholder {
   position: relative;
   padding-bottom: 45px; }
 
-.bloc3 img {
+.bloc3 iframe {
   position: absolute;
   object-fit: cover;
   left: 0;
