@@ -1,7 +1,8 @@
-const img = document.querySelector("#main-header .container>img")
-function parallax(){
-    // console.log(window.scrollY)
-    img.style.transform = "translateY("+window.scrollY/2+"px)"
+const img = document.getElementById('background');
+
+function parallax() {
+  const top = window.scrollY / 2;
+  img.style.transform = `translateY(${top}px)`;
 }
-window.addEventListener("scroll", parallax)
-console.log(img)
+
+window.addEventListener('scroll', parallax);
