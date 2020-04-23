@@ -12,7 +12,7 @@ gulp.task('sass:watch', function () {
   return gulp.watch('./assets/**/*.scss', gulp.series('sass'));
 });
 
-gulp.task('default',() => 
+gulp.task('imagemin',() => 
   gulp.src('media/*')
       .pipe(imagemin())
       .pipe(gulp.dest('dist/images'))
