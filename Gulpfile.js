@@ -17,3 +17,8 @@ gulp.task('imagemin',() =>
       .pipe(imagemin())
       .pipe(gulp.dest('./public/images'))
 );
+
+gulp.task('scripts', function () {
+  return gulp.src('./src/main.js')
+    .pipe(gulp.dest('./public'));
+});
