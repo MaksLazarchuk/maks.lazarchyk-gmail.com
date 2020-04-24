@@ -3,17 +3,17 @@ const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/**/*.scss')
+  return gulp.src('./src/assets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./public'));
 });
 
 gulp.task('sass:watch', function () {
-  return gulp.watch('./assets/**/*.scss', gulp.series('sass'));
+  return gulp.watch('./src/assets/**/*.scss', gulp.series('sass'));
 });
 
 gulp.task('imagemin',() => 
-  gulp.src('media/*')
+  gulp.src('./src/assets/media/*')
       .pipe(imagemin())
-      .pipe(gulp.dest('dist/images'))
+      .pipe(gulp.dest('./public/images'))
 );
