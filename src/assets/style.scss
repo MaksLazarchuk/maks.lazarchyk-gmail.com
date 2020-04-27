@@ -432,6 +432,13 @@ input::placeholder {
     width: 70px;
     margin-left: 140px;
     margin-top: 45px;
+
+    border: 0;
+    padding: 0;
+    background: transparent url('/images/button-bloc3.png') no-repeat;
+    width: 66px;
+    height: 67px;
+
     @include respond-below(xs) {
       margin-top: 25px;
     }

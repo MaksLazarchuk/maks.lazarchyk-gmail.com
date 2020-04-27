@@ -404,7 +404,12 @@ input::placeholder {
   height: 71px;
   width: 70px;
   margin-left: 140px;
-  margin-top: 45px; }
+  margin-top: 45px;
+  border: 0;
+  padding: 0;
+  background: transparent url("/images/button-bloc3.png") no-repeat;
+  width: 66px;
+  height: 67px; }
   @media (max-width: 575px) {
     .bloc3 .button-bloc3 {
       margin-top: 25px; } }

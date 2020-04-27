@@ -124,14 +124,12 @@
         <div class="container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5211.41593967001!2d26.256063468877493!3d50.61729754787826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1587463655741!5m2!1sru!2sua" width="1280" height="636" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <div class="fond">
-                <div class="bloc3-content">
-                    <input class="input-border" type="name" placeholder="Name">
-                    <input class="input-border" type="email" placeholder="Email address">
-                    <textarea class="input-border" type="text" placeholder="Message"></textarea>
-                    <a href="#" class="button-bloc3">
-                        <img src="/images/button-bloc3.png" alt="button" id="background">
-                    </a>
-                </div>
+                <form class="bloc3-content" action="/form" method="post">
+                    <input class="input-border" type="name" placeholder="Name" name="name">
+                    <input class="input-border" type="email" placeholder="Email address" name="email">
+                    <textarea class="input-border" type="text" placeholder="Message" name="message"></textarea>
+                    <button type="submit" class="button-bloc3"></button>
+                </form>
             </div>
         </div>
     </section>
