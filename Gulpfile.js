@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
+const minify = require('gulp-minify');
 
 gulp.task('sass', function () {
   return gulp.src('./src/assets/**/*.scss')
@@ -12,13 +13,14 @@ gulp.task('sass:watch', function () {
   return gulp.watch('./src/assets/**/*.scss', gulp.series('sass'));
 });
 
-gulp.task('imagemin',() => 
+gulp.task('imagemin', () =>
   gulp.src('./src/assets/media/*')
-      .pipe(imagemin())
-      .pipe(gulp.dest('./public/images'))
+    .pipe(imagemin())
+    .pipe(gulp.dest('./public/images'))
 );
 
 gulp.task('scripts', function () {
   return gulp.src('./src/main.js')
+  .pipe(minify())
     .pipe(gulp.dest('./public'));
 });

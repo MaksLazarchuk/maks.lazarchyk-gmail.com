@@ -1,0 +1,1 @@
+const img=document.getElementById("background");function parallax(){const n=window.scrollY/2;img.style.transform=`translateY(${n}px)`}window.addEventListener("scroll",parallax);
